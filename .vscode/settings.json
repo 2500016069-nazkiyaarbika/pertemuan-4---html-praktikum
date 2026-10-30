@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": ["--login", "-i"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "bash"
+}

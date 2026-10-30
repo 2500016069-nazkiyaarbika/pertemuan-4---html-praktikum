@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <div class="calculator-heading">
+            <p class="eyebrow">KALKULATOR</p>
+        </div>
+
+        <section class="display" aria-label="Layar kalkulator">
+            <p id="expression" aria-live="polite"></p>
+            <output id="display" aria-live="polite">0</output>
+        </section>
+
+        <div class="keypad" aria-label="Tombol kalkulator">
+            <button type="button" class="key key-utility" data-action="clear">AC</button>
+            <button type="button" class="key key-utility" data-action="delete" aria-label="Hapus angka terakhir">DEL</button>
+            <button type="button" class="key key-operator" data-operation="divide" aria-label="Bagi">÷</button>
+            <button type="button" class="key key-operator" data-operation="multiply" aria-label="Kali">×</button>
+
+            <button type="button" class="key" data-digit="7">7</button>
+            <button type="button" class="key" data-digit="8">8</button>
+            <button type="button" class="key" data-digit="9">9</button>
+            <button type="button" class="key key-operator" data-operation="subtract" aria-label="Kurang">−</button>
+
+            <button type="button" class="key" data-digit="4">4</button>
+            <button type="button" class="key" data-digit="5">5</button>
+            <button type="button" class="key" data-digit="6">6</button>
+            <button type="button" class="key key-operator" data-operation="add" aria-label="Tambah">+</button>
+
+            <button type="button" class="key" data-digit="1">1</button>
+            <button type="button" class="key" data-digit="2">2</button>
+            <button type="button" class="key" data-digit="3">3</button>
+            <button type="button" class="key key-equals" data-action="equals" aria-label="Sama dengan">=</button>
+
+            <button type="button" class="key key-zero" data-digit="0">0</button>
+            <button type="button" class="key" data-action="decimal" aria-label="Koma desimal">.</button>
+        </div>
+    </main>
+
+    <script src="kalkulator.js"></script>
+</body>
+</html>
